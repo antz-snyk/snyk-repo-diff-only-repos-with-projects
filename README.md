@@ -1,3 +1,11 @@
+# Inverse of snyk-tech-services/snyk-repo-diff
+
+Instead of filtering for a list of SCM repos with no associated Snyk projects in a given Snyk Group, this version filters for a list of only SCM repos with associated Snyk project.
+
+[NOTE]: Only tested with container version
+
+ref: https://github.com/snyk-tech-services/snyk-repo-diff
+
 # repo_diff.py
 
 [![CircleCI](https://circleci.com/gh/snyk-tech-services/snyk-repo-diff/tree/main.svg?style=shield)](https://circleci.com/gh/snyk-tech-services/snyk-repo-diff/tree/main)
@@ -68,7 +76,7 @@ Options:
 ## Running with Docker
 
 1. Build the container with docker, a command like this should suffice:<p>
-   `docker build --pull --no-cache --force-rm -f Dockerfile -t repo_diff .`
+   `docker build --pull --no-cache --force-rm -f Dockerfile -t repo_diff_only-repos-with-projects .`
 
    Example:
 
@@ -109,7 +117,7 @@ Options:
    - Specify the `--snyk-group`, `--scm-org`, and `--out-file` options for the script
 
    ```shell
-   ❯ docker run --rm -v "${PWD}/output":/app/output -e SNYK_TOKEN -e SCM_TOKEN -it repo_diff \
+   ❯ docker run --rm -v "${PWD}/output":/app/output -e SNYK_TOKEN -e SCM_TOKEN -it repo_diff_only-repos-with-projects \
    --out-file output/repos-with-no-projects.csv \
    --snyk-group 36863d40-ba29-491f-af63-7a1a7d79e411 \
    --scm-org snyk-playground

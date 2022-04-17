@@ -272,7 +272,7 @@ def main(
             typer_the_repos.update(1)
 
     if not with_projects:
-        repos = [r for r in repos if len(r["projects"]) == 0]
+        repos = [r for r in repos if len(r["projects"]) != 0]
 
     typer.echo(f"Formatting and writing results to {out_file.name}")
 
