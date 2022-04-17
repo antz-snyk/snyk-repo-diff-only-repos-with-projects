@@ -1,8 +1,8 @@
 # Inverse of snyk-tech-services/snyk-repo-diff
 
-Instead of filtering for a list of SCM repos with no associated Snyk projects in a given Snyk Group, this version filters for a list of only SCM repos with associated Snyk project.
+Instead of filtering for a list of SCM repos with no associated Snyk projects in a given Snyk Group, this version filters for a list of ONLY SCM repos that have a definite associated with a Snyk project.
 
-[NOTE]: Only tested with container version
+[NOTE]: Only tested with container version, only containerr version of commands updated below
 
 ref: https://github.com/snyk-tech-services/snyk-repo-diff
 
