@@ -2,7 +2,7 @@
 
 Instead of filtering for a list of SCM repos with no associated Snyk projects in a given Snyk Group, this version filters for a list of ONLY SCM repos that have a definite corresponding imported Snyk project.
 
-[NOTE]: Only tested with container version, only containerr version of commands updated below
+[NOTE]: Only tested with container version, only container version of commands updated below
 
 ref: https://github.com/snyk-tech-services/snyk-repo-diff
 
